@@ -1,0 +1,15 @@
+#+HTML_HEAD: <link rel="stylesheet" href="../../static/style.css">
+#+HTML_HEAD: <link rel="icon" href="../../static/projects/indus/favicon.png" type="image/png">
+#+EXPORT_FILE_NAME: index
+#+TITLE: Indus
+
+Indus is a simple clipboard summarizer written in Go. It works by searching for
+summary of text in clipboard & notifies the user about it.
+
+* How is it useful?
+I like the three finger tap feature on OSX, it pops up a little frame that shows
+useful information on selected text. On my primary computer I have to select the
+text, right click & choose "search with <search engine>". I wanted to make it
+simpler so I made this tool. With this tool I just have to select the text, run
+the command (binded to Mod+z) & it shows information on selected text as
+notification.
