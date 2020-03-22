@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 
 	"framagit.org/andinus/indus/clipboard"
 	"framagit.org/andinus/indus/fetch"
@@ -10,6 +11,11 @@ import (
 )
 
 func main() {
+	if len(os.Args) > 1 && os.Args[1] == "version" {
+		fmt.Println("Indus v0.1.0")
+		os.Exit(0)
+	}
+
 	// Get the primary clipboard selection.
 	sel, err := clipboard.GetSel()
 	if err != nil {
