@@ -17,8 +17,8 @@ func Wikipedia(w fetch.Wiki) (notification.Notif, error) {
 	// with other page types to get summary.
 	switch w.Type {
 	case "standard":
-		n.Title = fmt.Sprintf("%s - Wikipedia", w.Title)
-		n.Message = w.Description
+		n.Title = fmt.Sprintf("%s", w.Title)
+		n.Message = w.Extract
 	default:
 		err = fmt.Errorf("Summarizing wikipedia response failed")
 	}
